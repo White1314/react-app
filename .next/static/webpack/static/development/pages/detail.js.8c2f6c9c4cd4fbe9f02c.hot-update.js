@@ -1,0 +1,133 @@
+webpackHotUpdate("static\\development\\pages\\detail.js",{
+
+/***/ "./pages/detail.tsx":
+/*!**************************!*\
+  !*** ./pages/detail.tsx ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/_@babel_runtime@7.9.6@@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/_styled-jsx@3.2.5@styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/_react@16.13.1@react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/_react-redux@7.2.0@react-redux/es/index.js");
+/* harmony import */ var _server_utils_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../server/utils.js */ "./server/utils.js");
+/* harmony import */ var _server_utils_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_server_utils_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../actions */ "./actions/index.tsx");
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+
+
+
+
+var Detail = function Detail(_ref) {
+  var owner = _ref.owner,
+      name = _ref.name;
+  var userRepo = Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["useSelector"])(function (state) {
+    return state.detail.user_repo;
+  });
+  var repoReadme = Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["useSelector"])(function (state) {
+    return state.detail.repo_readme;
+  });
+  var repoIssues = Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["useSelector"])(function (state) {
+    return state.detail.repo_issues;
+  });
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(repoIssues),
+      issues = _useState[0],
+      setIssues = _useState[1]; // 父组件执行筛选用户的操作
+
+
+  var onChange = Object(react__WEBPACK_IMPORTED_MODULE_2__["useCallback"])(function _callee(value) {
+    var data;
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _context.next = 2;
+            return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_server_utils_js__WEBPACK_IMPORTED_MODULE_4__["getApiData"])(null, "/repos/".concat(owner, "/").concat(name, "/issues?creator=").concat(value)));
+
+          case 2:
+            data = _context.sent;
+            setIssues(data);
+
+          case 4:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, null, null, null, Promise);
+  }, []);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx("div", {
+    className: "jsx-1988351315" + " " + "root"
+  }, __jsx("div", {
+    className: "jsx-1988351315" + " " + "content"
+  })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    id: "1988351315"
+  }, ".root.jsx-1988351315{height:100%;overflow-y:auto;}.head.jsx-1988351315{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:12px;}.head-img.jsx-1988351315{width:30px;height:30px;}.head-login.jsx-1988351315{color:#666;margin:0 10px;}.head-name.jsx-1988351315{font-weight:500;}.content.jsx-1988351315{margin-right:20px;}.issue.jsx-1988351315:hover{border-top:1px solid #6739b6;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFwzNjBEb3dubG9hZHNcXFZzY29kZVxccHJvZ3JhbVxcTmV4dC1HaXRodWItQXBwXFxwYWdlc1xcZGV0YWlsLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFnRGtCLEFBR3VCLEFBSUMsQUFLRixBQUlBLEFBSUssQUFHRSxBQUdXLFdBYmpCLEFBSUUsQ0FiRSxJQWlCbEIsRUFHQSxLQVZBLEVBSUEsR0FiQSxDQXNCQSw2Q0FuQnFCLDZGQUNKLGVBQ2pCIiwiZmlsZSI6IkQ6XFwzNjBEb3dubG9hZHNcXFZzY29kZVxccHJvZ3JhbVxcTmV4dC1HaXRodWItQXBwXFxwYWdlc1xcZGV0YWlsLnRzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFRhYnMgfSBmcm9tICdhbnRkJztcclxuaW1wb3J0IHsgdXNlU2VsZWN0b3IgfSBmcm9tICdyZWFjdC1yZWR1eCc7XHJcblxyXG5pbXBvcnQgeyBnZXRBcGlEYXRhIH0gZnJvbSAnLi4vc2VydmVyL3V0aWxzLmpzJztcclxuaW1wb3J0ICogYXMgYWN0aW9ucyBmcm9tICcuLi9hY3Rpb25zJztcclxuaW1wb3J0IE1hcmtkb3duIGZyb20gJy4uL2NvbXBvbmVudHMvTWFya2Rvd24nO1xyXG5pbXBvcnQgSXNzdWVzIGZyb20gJy4uL2NvbXBvbmVudHMvSXNzdWVzJztcclxuaW1wb3J0IFNlYXJjaFVzZXIgZnJvbSAnLi4vY29tcG9uZW50cy9TZWFyY2hVc2VyJztcclxuaW1wb3J0IHsgdXNlU3RhdGUsIHVzZUNhbGxiYWNrIH0gZnJvbSAncmVhY3QnO1xyXG5cclxuaW50ZXJmYWNlIFMge1xyXG4gIGRldGFpbDoge1xyXG4gICAgdXNlcl9yZXBvPzoge1xyXG4gICAgICBuYW1lOiBzdHJpbmc7XHJcbiAgICAgIG93bmVyPzoge1xyXG4gICAgICAgIGF2YXRhcl91cmw6IHN0cmluZztcclxuICAgICAgICBsb2dpbjogc3RyaW5nO1xyXG4gICAgICB9O1xyXG4gICAgfTtcclxuICAgIHJlcG9fcmVhZG1lPzoge1xyXG4gICAgICBjb250ZW50OiBhbnk7XHJcbiAgICB9O1xyXG4gICAgcmVwb19pc3N1ZXM6IGFueTtcclxuICB9O1xyXG59XHJcblxyXG5jb25zdCBEZXRhaWwgPSAoeyBvd25lciwgbmFtZSB9KSA9PiB7XHJcbiAgY29uc3QgdXNlclJlcG8gPSB1c2VTZWxlY3Rvcigoc3RhdGU6IFMpID0+IHN0YXRlLmRldGFpbC51c2VyX3JlcG8pO1xyXG4gIGNvbnN0IHJlcG9SZWFkbWUgPSB1c2VTZWxlY3Rvcigoc3RhdGU6IFMpID0+IHN0YXRlLmRldGFpbC5yZXBvX3JlYWRtZSk7XHJcbiAgY29uc3QgcmVwb0lzc3VlcyA9IHVzZVNlbGVjdG9yKChzdGF0ZTogUykgPT4gc3RhdGUuZGV0YWlsLnJlcG9faXNzdWVzKTtcclxuXHJcbiAgY29uc3QgW2lzc3Vlcywgc2V0SXNzdWVzXSA9IHVzZVN0YXRlKHJlcG9Jc3N1ZXMpO1xyXG5cclxuICAvLyDniLbnu4Tku7bmiafooYznrZvpgInnlKjmiLfnmoTmk43kvZxcclxuICBjb25zdCBvbkNoYW5nZSA9IHVzZUNhbGxiYWNrKGFzeW5jICh2YWx1ZSkgPT4ge1xyXG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IGdldEFwaURhdGEoXHJcbiAgICAgIG51bGwsXHJcbiAgICAgIGAvcmVwb3MvJHtvd25lcn0vJHtuYW1lfS9pc3N1ZXM/Y3JlYXRvcj0ke3ZhbHVlfWBcclxuICAgICk7XHJcbiAgICBzZXRJc3N1ZXMoZGF0YSk7XHJcbiAgfSwgW10pO1xyXG5cclxuICByZXR1cm4gKFxyXG4gICAgPD5cclxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb290XCI+XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50XCI+PC9kaXY+XHJcbiAgICAgIDwvZGl2PlxyXG5cclxuICAgICAgPHN0eWxlIGpzeD57YFxyXG4gICAgICAgIC5yb290IHtcclxuICAgICAgICAgIGhlaWdodDogMTAwJTtcclxuICAgICAgICAgIG92ZXJmbG93LXk6IGF1dG87XHJcbiAgICAgICAgfVxyXG4gICAgICAgIC5oZWFkIHtcclxuICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xyXG4gICAgICAgIH1cclxuICAgICAgICAuaGVhZC1pbWcge1xyXG4gICAgICAgICAgd2lkdGg6IDMwcHg7XHJcbiAgICAgICAgICBoZWlnaHQ6IDMwcHg7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIC5oZWFkLWxvZ2luIHtcclxuICAgICAgICAgIGNvbG9yOiAjNjY2O1xyXG4gICAgICAgICAgbWFyZ2luOiAwIDEwcHg7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIC5oZWFkLW5hbWUge1xyXG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDUwMDtcclxuICAgICAgICB9XHJcbiAgICAgICAgLmNvbnRlbnQge1xyXG4gICAgICAgICAgbWFyZ2luLXJpZ2h0OiAyMHB4O1xyXG4gICAgICAgIH1cclxuICAgICAgICAuaXNzdWU6aG92ZXIge1xyXG4gICAgICAgICAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICM2NzM5YjY7XHJcbiAgICAgICAgfVxyXG4gICAgICBgfTwvc3R5bGU+XHJcbiAgICA8Lz5cclxuICApO1xyXG59O1xyXG5cclxuRGV0YWlsLmdldEluaXRpYWxQcm9wcyA9IGFzeW5jICh7IGN0eCB9KSA9PiB7XHJcbiAgY29uc3QgeyBzdG9yZSwgcXVlcnkgfSA9IGN0eDtcclxuICBjb25zdCB7IG93bmVyLCBuYW1lIH0gPSBxdWVyeTtcclxuXHJcbiAgY29uc3QgZGF0YSA9IGF3YWl0IFByb21pc2UuYWxsKFtcclxuICAgIGF3YWl0IGdldEFwaURhdGEoY3R4LCBgL3JlcG9zLyR7b3duZXJ9LyR7bmFtZX1gKSxcclxuICAgIGF3YWl0IGdldEFwaURhdGEoY3R4LCBgL3JlcG9zLyR7b3duZXJ9LyR7bmFtZX0vcmVhZG1lYCksXHJcbiAgICBhd2FpdCBnZXRBcGlEYXRhKGN0eCwgYC9yZXBvcy8ke293bmVyfS8ke25hbWV9L2lzc3Vlc2ApLFxyXG4gIF0pO1xyXG4gIGNvbnNvbGUubG9nKGRhdGEpO1xyXG4gIHN0b3JlLmRpc3BhdGNoKGFjdGlvbnMuZ2V0RGV0YWlsUmVwb3MoZGF0YVswXSkpO1xyXG4gIHN0b3JlLmRpc3BhdGNoKGFjdGlvbnMuZ2V0UmVwb1JlYWRtZShkYXRhWzFdKSk7XHJcbiAgc3RvcmUuZGlzcGF0Y2goYWN0aW9ucy5nZXRSZXBvSXNzdWVzKGRhdGFbMl0pKTtcclxuXHJcbiAgcmV0dXJuIHtcclxuICAgIG93bmVyLFxyXG4gICAgbmFtZSxcclxuICB9O1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgRGV0YWlsO1xyXG4iXX0= */\n/*@ sourceURL=D:\\\\360Downloads\\\\Vscode\\\\program\\\\Next-Github-App\\\\pages\\\\detail.tsx */"));
+};
+
+Detail.getInitialProps = function _callee2(_ref2) {
+  var ctx, store, query, owner, name, data;
+  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee2$(_context2) {
+    while (1) {
+      switch (_context2.prev = _context2.next) {
+        case 0:
+          ctx = _ref2.ctx;
+          store = ctx.store, query = ctx.query;
+          owner = query.owner, name = query.name;
+          _context2.t0 = _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a;
+          _context2.t1 = Promise;
+          _context2.next = 7;
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_server_utils_js__WEBPACK_IMPORTED_MODULE_4__["getApiData"])(ctx, "/repos/".concat(owner, "/").concat(name)));
+
+        case 7:
+          _context2.t2 = _context2.sent;
+          _context2.next = 10;
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_server_utils_js__WEBPACK_IMPORTED_MODULE_4__["getApiData"])(ctx, "/repos/".concat(owner, "/").concat(name, "/readme")));
+
+        case 10:
+          _context2.t3 = _context2.sent;
+          _context2.next = 13;
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_server_utils_js__WEBPACK_IMPORTED_MODULE_4__["getApiData"])(ctx, "/repos/".concat(owner, "/").concat(name, "/issues")));
+
+        case 13:
+          _context2.t4 = _context2.sent;
+          _context2.t5 = [_context2.t2, _context2.t3, _context2.t4];
+          _context2.t6 = _context2.t1.all.call(_context2.t1, _context2.t5);
+          _context2.next = 18;
+          return _context2.t0.awrap.call(_context2.t0, _context2.t6);
+
+        case 18:
+          data = _context2.sent;
+          console.log(data);
+          store.dispatch(_actions__WEBPACK_IMPORTED_MODULE_5__["getDetailRepos"](data[0]));
+          store.dispatch(_actions__WEBPACK_IMPORTED_MODULE_5__["getRepoReadme"](data[1]));
+          store.dispatch(_actions__WEBPACK_IMPORTED_MODULE_5__["getRepoIssues"](data[2]));
+          return _context2.abrupt("return", {
+            owner: owner,
+            name: name
+          });
+
+        case 24:
+        case "end":
+          return _context2.stop();
+      }
+    }
+  }, null, null, null, Promise);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Detail);
+
+/***/ })
+
+})
+//# sourceMappingURL=detail.js.8c2f6c9c4cd4fbe9f02c.hot-update.js.map
