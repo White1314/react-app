@@ -955,7 +955,7 @@
     "schema-utils": "^2.6.6",
     "semver": "^7.0.0",
     "resolve-from": "^3.0.0",
-    "serialize-javascript": "^2.1.2",
+    "serialize-javascript": "^4.0.0",
     "set-value": "^2.0.1",
     "sha.js": "^2.4.11",
     "setimmediate": "^1.0.5",
