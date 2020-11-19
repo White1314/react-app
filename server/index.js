@@ -58,7 +58,7 @@ app.prepare().then(() => {
     await next();
   });
 
-  server.listen(3001, function () {
-    console.log('node app start at port 3001');
+  server.listen(3000, function () {
+    console.log('node app start at port 3000');
   });
 });
